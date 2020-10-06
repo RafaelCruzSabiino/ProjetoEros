@@ -1,0 +1,57 @@
+<br>
+<div class="panel panel-info">
+    <div class="panel-heading">
+        <h3 class="panel-title"><b><a href="PerfilAmigo.php?Usuario=EMPRESA">ABREVIACAO</a></b></h3>
+        <h8 class="panel-title">DATA</h8>
+    </div>
+    <div class="panel-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">                                        
+                    <center><img src="IMAGEM2" class="img-responsive" alt="Image" id="ImagemPublic"></center>                                       
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-12">
+                    <center>
+                        <h5>TEXTO</h5>
+                        <a href="LINK" target="_blank">LINK</a>
+                    </center>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-3">
+                    <center><a id="Curtir" onclick="Curtir(ID, CONTADOR);"><i class="CLASSE" id="COUNT"></i></a><center><p><input type="text" style="background: transparent; border: 0;width: 100%;" class="text-center" value="CURTIDA" id="NumeroCurtidaCONTADOR" disabled> Curtidas</p>
+                </div>  
+                <div class="col-sm-7">        
+                    <br>                                
+                    <textarea name="Comentario" id="TextoComentarioCONTADOR" class="form-control" rows="1" required="required" placeholder="Deixe seu comentário"></textarea>                                    
+                </div>
+                <div class="col-sm-1">  
+                    <br>                                 
+                    <button type="button" class="btn btn-primary" id="ButtonComentario" onclick="InserirComentario(ID, CONTADOR)"><i class="fa fa-share-square-o"></i></button>                                    
+                </div>
+            </div>
+            <br>
+            <div class="row" id="depoisCONTADOR">
+                <div class="col-sm-12">
+                    <div id="ReturnComentariosCONTADOR"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                    <center>
+                    <button type="button" class="btn btn-deafult" onclick="BuscarComentario(ID, CONTADOR, 10)" style="color: red;" id="BtnComentAntesCONTADOR"><u>Ver Comentários</u></button>
+                    <button type="button" class="btn btn-deafult" onclick="BuscarComentario(ID, CONTADOR, 1)" style="color: red; display: none;" id="BtnComentDepoisCONTADOR"><u>Ver -</u></button>
+                    </center>
+                </div>
+                <div class="col-sm-4"></div>
+             </div>
+        </div>
+    </div>
+</div>
+</div>
+<br>
